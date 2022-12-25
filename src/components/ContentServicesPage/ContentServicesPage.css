@@ -1,0 +1,112 @@
+.content-services-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+.content-services-section p {
+  color: #43484d;
+  font-family: "PT Serif", serif;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  text-align: justify;
+}
+.content-services-wrap {
+  width: 81%;
+}
+.content-services-h2-container {
+  display: flex;
+  align-items: flex-start;
+}
+.content-services-h2-1-container {
+  height: 110px;
+}
+.content-services-h2-container h2 {
+  font-weight: 700;
+  font-size: 28px;
+}
+.content-services-wrap > h6 {
+  padding-bottom: 50px;
+}
+.content-services-wrap > h6 > em > strong {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 13px;
+  color: #43484d;
+}
+.content-services-h2-2-container {
+  height: 138px;
+}
+.content-services-button-redirect-contact {
+  color: blueviolet;
+  text-decoration: none;
+  background-color: transparent;
+  font-weight: 900;
+}
+.content-services-h2-3-container {
+  height: 90px;
+}
+.content-services-h2-4-container {
+  height: 90px;
+}
+@media (min-width: 414px) {
+  .content-services-h2-2-container {
+    height: 125px;
+  }
+  .content-services-h2-3-container {
+    height: 82px;
+  }
+  .content-services-h2-4-container {
+    height: 80px;
+  }
+}
+@media (min-width: 464px) {
+  .content-services-h2-2-container {
+    height: 100px;
+  }
+}
+@media (min-width: 491px) {
+  .content-services-h2-1-container {
+    height: 90px;
+  }
+  .content-services-h2-2-container {
+    height: 85px;
+  }
+  .content-services-h2-3-container {
+    height: 50px;
+  }
+}
+@media (min-width: 538px) {
+  .content-services-h2-4-container {
+    height: 55px;
+  }
+}
+@media (min-width: 678px) {
+  .content-services-wrap > h6 {
+    padding-bottom: 35px;
+  }
+}
+@media (min-width: 737px) {
+  .content-services-h2-1-container {
+    height: 65px;
+  }
+}
+@media (min-width: 821px) {
+  .content-services-h2-2-container {
+    height: 55px;
+  }
+}
+@media (min-width: 1200px) {
+  .content-services-section p {
+    color: #43484d;
+    font-family: "PT Serif", serif;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    width: 1000px;
+  }
+}

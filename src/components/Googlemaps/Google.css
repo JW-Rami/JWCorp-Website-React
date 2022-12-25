@@ -1,0 +1,49 @@
+.google-maps-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.google-maps-container > span {
+    font-size: 21px;
+    font-weight: bolder;
+    font-family: 'Montserrat';
+    width: 80%;
+    text-align: center;
+    line-height: 1.8;
+    letter-spacing: .5px;
+}
+.google-maps-cut {
+    height: 20px;
+}
+.google-maps-container iframe{
+    width: 80% !important;
+    height: 400px !important;
+}
+@media (min-width: 375px) {
+    .google-maps-container > span{
+        width: 262px;
+    }
+}
+@media (min-width: 500px) {
+    .google-maps-container > span{
+        width: 300px;
+    }
+}
+@media (min-width: 1080px) {
+    .google-maps-container > span{
+        width: 648px;
+    }
+}
+@media (min-width: 1440px) {
+    .google-maps-container > span{
+        width: 1048px;
+    }
+    .google-maps-container iframe{
+        width: 1152px !important;
+        height: 400px !important;
+    }
+}

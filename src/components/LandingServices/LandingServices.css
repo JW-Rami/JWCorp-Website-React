@@ -1,0 +1,40 @@
+.landing-service {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1.8em;
+  letter-spacing: 0.05em;
+  background-color: blueviolet;
+  height: 30vh;
+  width: 100vw;
+  max-width: 100%;
+  color: #fff;
+}
+.landing-service-title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+.landing-service-title {
+    font-weight: 800;
+}
+
+
+@media (min-width: 750px) {
+  .landing-service{
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1900px) {
+  .landing-service{
+    font-size: 2.8em;
+  }
+}
+
+@media (min-width: 2100px) {
+  .landing-service{
+    font-size: 3.3em;
+  }
+}

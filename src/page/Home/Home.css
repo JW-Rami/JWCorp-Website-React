@@ -1,0 +1,12 @@
+/* 
+#body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+} */
+
+.img-responsive {
+  width: 15em;
+  height: 8em;
+}

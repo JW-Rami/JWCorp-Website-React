@@ -1,0 +1,427 @@
+/* IPHONE SE
+  width 320px
+  height 568px
+*/
+
+/* 
+  1. CTA (Call To Action) 
+    1.1 Line Animation
+
+  2. Form
+    2.1 Title Container
+    2.2 Mail Container
+    2.3 Space Container
+    2.4 Message Container
+    2.5 Button Container
+    2.6 Error message
+    2.7 Validation Formulaire
+    2.8 Validation Animation Disapear
+
+  3. Media Queries
+*/
+
+/* ----- 1. CTA (Call To Action) ----- */
+
+/* .form-cta-container-of-container{
+  height: 900px;
+} */
+
+.form-cta-container {
+  /* z-index: 3; */
+  z-index: -1;
+  max-width: 100% !important;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  /* height: 90%; */
+  height: 800px;
+  /* background-color: red; */
+  text-align: center;
+  justify-content: center;
+}
+
+.cta-form {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: yellow; */
+}
+
+.cta-form-paragraph {
+  height: 40%;
+  font-weight: bolder;
+  font-size: 0.9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-cta-form {
+  height: 100%;
+  width: 100%;
+}
+
+/* ----- 1.1 Line animation -----*/
+
+.line-animation-top-container {
+  height: 20%;
+  /* background-color: red; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.line-animation-top {
+  width: 35%;
+  height: 40%;
+  border-bottom: 3px solid blueviolet;
+  /* animation: line-animation-top 0.5s linear; */
+}
+
+@keyframes line-animation-top {
+  from {
+    transform: translateX(-125%);
+  }
+}
+
+.line-animation-bottom-container {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.line-animation-bottom {
+  width: 35%;
+  height: 40%;
+  border-bottom: 3px solid blueviolet;
+  /* animation: line-animation-bottom 0.5s linear; */
+}
+
+@keyframes line-animation-bottom {
+  from {
+    transform: translateX(+125%);
+  }
+}
+
+/* ----- 2. Form ----- */
+
+form {
+  background-color: blueviolet;
+  width: 85vw;
+  height: 55%;
+  color: white;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-weight: bolder;
+  flex-wrap: wrap;
+  box-shadow: 17.2px 21.5px 21.1px rgba(0, 0, 0, 0.121),
+    31.1px 38.8px 37.7px rgba(0, 0, 0, 0.202),
+    46px 57.5px 60.7px rgba(0, 0, 0, 0.274), 64px 80px 160px rgba(0, 0, 0, 0.4);
+}
+
+/* ----- 2.1 Title Container ----- */
+
+.title-container {
+  height: 10%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form h4 {
+  font-size: 1.4em;
+  /* background-color: red; */
+}
+
+/* ----- 2.2 Mail Container ----- */
+
+.mail-container {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: yellow; */
+}
+
+.label-mail {
+  height: 50%;
+  width: 80%;
+}
+
+.mail-input {
+  height: 80%;
+}
+
+.mail-input > input {
+  width: 90%;
+  height: 80%;
+  border-radius: 15px;
+  background-color: blueviolet;
+  border: none;
+  border-width: 0em 0em 30% 0em;
+  border-color: white;
+  border-bottom: 1px solid white;
+  color: white;
+  text-align: center;
+  font-family: "lato-black";
+}
+
+.mail-input > input:focus {
+  outline: none;
+  background-color: rgb(121, 48, 189);
+  transition: background-color 0.25s;
+}
+
+/* ----- 2.3 Space Container ----- */
+
+.space-container {
+  height: 10%;
+  /* background-color: fuchsia; */
+}
+
+/* ----- 2.4 Message Container ----- */
+
+.message-container {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* background-color: green; */
+}
+
+.message-input > textarea {
+  border-radius: 15px;
+  background-color: blueviolet;
+  border: none;
+  border-width: 0em 0em 30% 0em;
+  border-color: white;
+  border-bottom: 1px solid white;
+  color: white;
+  font-family: "lato-black";
+}
+
+.message-input > textarea:focus {
+  outline: none;
+  background-color: rgb(121, 48, 189);
+  transition: background-color 0.25s;
+  color: white;
+}
+
+.label-message {
+  height: 20%;
+  width: 80%;
+}
+
+.text-label-message {
+  height: 80%;
+}
+
+.mesage-input {
+  /* background-color: aqua; */
+  height: 100%;
+}
+
+.text-label-mail {
+  width: auto;
+  height: 100%;
+}
+
+form .mail-container input:focus label {
+  background-color: red !important;
+  height: 100px !important;
+  width: 200px !important;
+}
+
+textarea {
+  /* height: 15em; */
+  height: 140px;
+  width: 100% !important;
+}
+
+/* ----- 2.5 Button Container ------ */
+
+.button-container {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  height: 15%;
+  width: 100%;
+  /* background-color: aqua; */
+}
+
+.button-container > div {
+  width: 100%;
+  height: 100%;
+}
+.submit-button {
+  background-color: blueviolet;
+  /* appearance: none; */
+  text-decoration: none;
+  cursor: pointer;
+  border-color: aliceblue;
+  border-radius: 10px;
+  width: 50%;
+  height: 60%;
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.submit-button:hover {
+  background-color: white;
+  color: blueviolet;
+  font-size: 1.1em;
+  transition: 0.8s;
+}
+
+/* ----- 2.6 Error message ----- */
+
+.error-message {
+  color: rgb(238, 14, 14);
+  font-size: 0.8em;
+  text-decoration: underline;
+}
+
+/* ----- 2.7 Validation Formualaire ----- */
+
+.validation-message-container {
+  height: 100%;
+  width: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.validation-message-text {
+  z-index: 3;
+  width: 80%;
+  height: 100%;
+  max-width: 100% !important;
+  background-color: rgb(19, 208, 19);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 15px;
+  animation: animation-validation 700ms;
+}
+
+@keyframes animation-validation {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* ----- 2.8 Validation Animation Disapear ----- */
+
+.validation-message-disapear{
+  height: 100%;
+  width: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 600;
+  opacity: 0;
+  animation: disapear 3s;
+}
+
+@keyframes disapear 
+{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+    display: none;
+  }
+}
+
+/* ----- 3. Media Queries ----- */
+
+@media (min-width: 750px) {
+  .text-cta-form-responsiv1 {
+    line-height: 120%;
+    height: 100%;
+    /* background-color: red; */
+  }
+  form {
+    width: 70vw;
+  }
+  .validation-message-container{
+    font-size: 1em;
+  }
+  .validation-message-disapear{
+    font-size: 1em;
+  }
+  .validation-message-text{
+    width: 40%;
+  }
+}
+
+@media (min-width: 900px) {
+  form {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 960px) {
+  .cta-form-paragraph {
+    width: 80%;
+    /* background-color: red; */
+  }
+}
+@media (min-width: 1100px) {
+  form {
+    width: 50vw;
+  }
+  form div h4 {
+    font-size: 1.6em;
+  }
+}
+@media (min-width: 1650px) {
+  .cta-form {
+    font-size: 1.2em;
+  }
+  .form-cta-container {
+    height: 1000px;
+  }
+  .cta-form-paragraph {
+    height: 30%;
+  }
+  .text-cta-form-responsiv1 {
+    /* line-height: 120%; */
+    height: 100%;
+  }
+  form {
+    width: 40vw;
+  }
+}
+
+@media (min-width: 2150px) {
+  .cta-form {
+    height: 40%;
+    /* background-color: red; */
+    font-size: 1.3em;
+  }
+}
